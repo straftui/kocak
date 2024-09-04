@@ -4,11 +4,11 @@ on:
 
   push:
     branches:
-      - main
-
-  workflow_dispatch:    
+      - master
+      
+  workflow_dispatch:
   schedule:
-  - cron: "*/59 * * * *" # See https://crontab.guru/#0_7,9,11_*_*_1,3
+  - cron: "*/60 * * * *" # See https://crontab.guru/#0_7,9,11_*_*_1,3
 
 jobs:
   auto_commit:
@@ -26,20 +26,20 @@ jobs:
           
       - name: Commit changes
         run: |
-          git config --local user.email "geixed3+straftui@outlook.com"
-          git config --local user.name "straftui"
+          git config --local user.email "ulungpangestuu@gmail.com"
+          git config --local user.name "deoffuscated"
           git add -A
           
-          arr[0]="chore(bot): 😂 auto commit"
-          arr[1]="chore(bot): 😱 auto commit"
-          arr[2]="chore(bot): 👿 auto commit"
-          arr[3]="chore(bot): 💩 auto commit"
-          arr[4]="chore(bot): 🙏 auto commit"
-          arr[5]="chore(bot): 🙈 auto commit"
-          arr[6]="chore(bot): 🐐 auto commit"
-          arr[7]="chore(bot): 🤖 auto commit"
-          arr[8]="chore(bot): 🟩 auto commit"
-          arr[9]="chore(bot): 👻 auto commit"
+          arr[0]="deoffuscated: 🕛 auto commit"
+          arr[1]="deoffuscated: 🕐 auto commit"
+          arr[2]="deoffuscated: 🕑 auto commit"
+          arr[3]="deoffuscated: 🕒 auto commit"
+          arr[4]="deoffuscated: 🕓 auto commit"
+          arr[5]="deoffuscated: 🕔 auto commit"
+          arr[6]="deoffuscated: 🕕 auto commit"
+          arr[7]="deoffuscated: 🕖 auto commit"
+          arr[8]="deoffuscated: 🕗 auto commit"
+          arr[9]="deoffuscated: 🕘 auto commit"
           
           rand=$[$RANDOM % ${#arr[@]}]
           
